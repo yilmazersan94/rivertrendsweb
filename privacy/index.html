@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | RiverTrends</title>
+  <meta name="description" content="Privacy Policy for the RiverTrends iPhone app.">
+  <meta name="theme-color" content="#071633">
+  <link rel="canonical" href="https://rivertrends.app/privacy">
+  <link rel="icon" type="image/png" href="../assets/app-icon.png">
+  <link rel="apple-touch-icon" href="../assets/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #06112a;
+      --bg-2: #081a3d;
+      --surface: rgba(8, 20, 46, 0.82);
+      --line: rgba(180, 214, 255, 0.14);
+      --text: #e9f2ff;
+      --muted: #b7c8e4;
+      --accent: #63c6ff;
+      --accent-2: #5cf1c7;
+      --shadow: 0 20px 80px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 10%, rgba(71, 144, 255, 0.22), transparent 42%),
+        radial-gradient(circle at 88% 8%, rgba(92, 241, 199, 0.12), transparent 48%),
+        linear-gradient(180deg, #040c1f 0%, #06112a 45%, #050d1d 100%);
+    }
+
+    .ambient {
+      position: fixed;
+      width: 20rem;
+      height: 20rem;
+      right: -6rem;
+      top: 4rem;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0.25;
+      filter: blur(18px);
+      background: radial-gradient(circle, rgba(99, 198, 255, 0.65), rgba(99, 198, 255, 0));
+    }
+
+    .site-header, main, .site-footer {
+      width: min(960px, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1rem 0 0.75rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .brand img {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .header-links {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+    }
+
+    .header-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .header-links a:hover {
+      color: var(--text);
+    }
+
+    main {
+      padding: 0.25rem 0 1.5rem;
+    }
+
+    .legal-card {
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
+        var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: clamp(1rem, 2vw, 1.5rem);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(8px);
+    }
+
+    .eyebrow {
+      margin: 0 0 0.6rem;
+      color: var(--accent);
+      font-size: 0.83rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Newsreader", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+
+    .updated {
+      margin: 0.85rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .content {
+      margin-top: 1rem;
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    .content h2,
+    .content h3 {
+      margin: 1.25rem 0 0.45rem;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .content h2 {
+      font-family: "Newsreader", Georgia, serif;
+      font-size: 1.5rem;
+    }
+
+    .content h3 {
+      font-size: 1rem;
+    }
+
+    .content p {
+      margin: 0.55rem 0;
+      color: var(--muted);
+    }
+
+    .content ul {
+      margin: 0.35rem 0 0.85rem;
+      padding-left: 1.15rem;
+      color: var(--muted);
+    }
+
+    .content li {
+      margin: 0.25rem 0;
+    }
+
+    .content a {
+      color: #aee8ff;
+      text-decoration-color: rgba(174, 232, 255, 0.45);
+    }
+
+    .content strong {
+      color: var(--text);
+    }
+
+    .contact-box {
+      margin-top: 0.7rem;
+      padding: 0.85rem;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .site-footer {
+      padding: 1rem 0 1.5rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.9rem;
+    }
+
+    .site-footer p { margin: 0; }
+
+    .site-footer a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      color: var(--text);
+    }
+
+    @media (max-width: 640px) {
+      .site-header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .site-footer {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="RiverTrends home">
+      <img src="../assets/brand-mark.png" alt="" width="36" height="36">
+      <span>RiverTrends</span>
+    </a>
+    <nav class="header-links" aria-label="Page links">
+      <a href="/">Home</a>
+      <a href="mailto:support@rivertrends.app">Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="legal-card">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy Policy for RiverTrends</h1>
+      <p class="updated">Last updated: <time datetime="2026-02-24">February 24, 2026</time></p>
+
+      <div class="content">
+        <p>
+          RiverTrends ("we", "our", or "us") provides a news trends app that helps users follow trending headlines and read linked articles in an in-app reader experience.
+        </p>
+        <p>
+          This Privacy Policy explains what information may be collected when you use RiverTrends, how it is used, and your choices.
+        </p>
+
+        <h2>1. Overview</h2>
+        <p>RiverTrends does not require an account to browse content.</p>
+        <p>
+          The app uses third-party services for push notifications, advertising, and app infrastructure. As a result, certain data may be collected by us and/or our third-party service providers.
+        </p>
+
+        <h2>2. Data We Collect</h2>
+        <h3>A. Data collected by third-party SDKs and services (may include)</h3>
+        <ul>
+          <li>Coarse Location (approximate location, such as region-level location)</li>
+          <li>Device Identifiers (for example, advertising or device-level identifiers)</li>
+          <li>Product Interaction data (such as app interactions)</li>
+          <li>Advertising Data (such as ad impressions and related ad activity)</li>
+          <li>Crash Data</li>
+          <li>Performance Data</li>
+        </ul>
+        <p>These data categories may be collected for purposes such as:</p>
+        <ul>
+          <li>Third-party advertising</li>
+          <li>Analytics</li>
+          <li>App functionality and reliability (including crash and performance monitoring)</li>
+        </ul>
+
+        <h3>B. Push notifications</h3>
+        <p>If you enable notifications, the app and its messaging providers may process:</p>
+        <ul>
+          <li>Push notification token(s)</li>
+          <li>Notification preferences (such as enabled alert categories/sources)</li>
+        </ul>
+        <p>You can disable notifications at any time in your device settings.</p>
+
+        <h3>C. Subscription information (RiverTrends Pro)</h3>
+        <p>RiverTrends offers optional auto-renewable subscriptions through Apple In-App Purchase.</p>
+        <p>
+          We do not receive or store your payment card or bank account details. Payments are processed by Apple. We may receive limited subscription status information needed to enable Pro features (for example, whether your subscription is active).
+        </p>
+
+        <h2>3. How We Use Information</h2>
+        <p>We and our service providers may use information to:</p>
+        <ul>
+          <li>Deliver app content and features</li>
+          <li>Send push notifications (if enabled)</li>
+          <li>Show ads (for non-Pro users)</li>
+          <li>Measure app performance and stability</li>
+          <li>Improve app quality and user experience</li>
+          <li>Prevent abuse and maintain service reliability</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>RiverTrends may use third-party services, including services for:</p>
+        <ul>
+          <li>Mobile app infrastructure and notifications</li>
+          <li>Advertising</li>
+          <li>Analytics / diagnostics</li>
+          <li>In-app purchases (Apple)</li>
+        </ul>
+        <p>These providers may collect and process data in accordance with their own privacy policies.</p>
+
+        <h2>5. Tracking</h2>
+        <p>
+          RiverTrends does not use AppTrackingTransparency (ATT) to request permission for cross-app tracking, and we do not use app data for cross-app tracking as defined by Apple.
+        </p>
+
+        <h2>6. Data Retention</h2>
+        <p>
+          We retain information only as long as reasonably necessary to operate the app, maintain reliability, comply with legal obligations, and resolve disputes.
+        </p>
+        <p>Retention periods may vary depending on the data type and the third-party service involved.</p>
+
+        <h2>7. Children's Privacy</h2>
+        <p>
+          RiverTrends is not directed to children under 13 (or the relevant minimum age in your jurisdiction), and we do not knowingly collect personal information directly from children.
+        </p>
+
+        <h2>8. Your Choices</h2>
+        <p>You may:</p>
+        <ul>
+          <li>Disable notifications in your device settings</li>
+          <li>Choose whether to subscribe to RiverTrends Pro</li>
+          <li>Limit ad personalization through device settings, where available</li>
+          <li>Stop using the app at any time</li>
+        </ul>
+
+        <h2>9. International Data Transfers</h2>
+        <p>
+          Your information may be processed in countries other than your country of residence, depending on the third-party services used to operate RiverTrends.
+        </p>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. We will post the updated version at this URL and update the "Last updated" date above.
+        </p>
+
+        <h2>11. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, contact us at:</p>
+        <div class="contact-box">
+          <a href="mailto:support@rivertrends.app">support@rivertrends.app</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> RiverTrends</p>
+    <div>
+      <a href="/">Home</a>
+      <span aria-hidden="true"> · </span>
+      <a href="mailto:support@rivertrends.app">Support</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
